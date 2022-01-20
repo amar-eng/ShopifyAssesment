@@ -19,13 +19,14 @@ html {
     letter-spacing: 10px;
     margin-top: -60px;
     padding-left: 10px;
+    span {
+        background: -webkit-linear-gradient(white, #38495a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
-.title span {
-    background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 // Stars CSS obtained from https://pastebin.com/gEfdRwgc 
 
@@ -599,3 +600,20 @@ html {
 
 
 
+.loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid darkblue;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+   position: absolute;
+   top: 50%; 
+   left: 45%; 
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
